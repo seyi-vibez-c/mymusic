@@ -1,0 +1,9 @@
+body {
+  background: blue;
+}
+body h1 {
+  text-align: center;
+  font-family: cursive;
+  text-decoration-line: blink;
+}
+
