@@ -1,9 +1,37 @@
-body {
-  background: blue;
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
-body h1 {
+body{
+  color: black;
+  background: red;
+  animation: 60s change infinite ease-in-out;
+  
+}
+.all {
+  color: rgba(225,200,100,0.9);
+  font-family: arial;
   text-align: center;
-  font-family: cursive;
-  text-decoration-line: blink;
+  font-weight: 1000;
 }
 
+
+
+@keyframes change{
+  20%{
+    background: linear-gradient(to left, #f00, #0f0);
+  }
+  40%{
+   background: radial-gradient(circle, #00f,#0f0, #f00);
+  }
+  60%{
+   background: conic-gradient(green,red);
+  }
+  80%{
+  background: linear-gradient(bottom, red,blue)
+  }
+  100%{
+  background: linear-gradient(to top, green, blue);
+  }
+}
