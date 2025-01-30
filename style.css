@@ -6,7 +6,7 @@
 body{
   color: black;
   background: red;
-  animation: 60s change infinite ease-in-out;
+  animation: 100s change infinite ease-in-out;
   
 }
 .all {
@@ -19,6 +19,9 @@ body{
 
 
 @keyframes change{
+  0%{
+    filter: hue(180deg);
+  }
   20%{
     background: linear-gradient(to left, #f00, #0f0);
   }
@@ -51,9 +54,45 @@ img {
   object-fit: cover;
   border-radius: 30px;
 }
-p {
+div p {
   font-family: cursive;
   font-size: 25px;
   position: absolute;
   left: 32px;
+}
+.foot {
+  font-family: arial;
+  animation: foot 1s infinite linear;
+}
+@keyframes foot {
+  0%{
+    color: red;
+    filter: hue(30deg);
+  }
+  20%{
+    color: pink;
+    filter: hue(60deg);
+  }
+  40%{
+    color: blue;
+  }
+  60%{
+    color: royalblue;
+  }
+  80%{
+    color: green;
+  }
+  100%{
+    color: black;
+  }
+  
+}
+h6{
+  font-size: 30px;
+}
+ul {
+  list-style-type: disc;
+  line-height: 1.5;
+  font-family: cursive;
+  font-size: 30px;
 }
